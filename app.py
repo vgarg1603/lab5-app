@@ -5,7 +5,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         response = {
             "status": "ok",
-            "version": "1.0"
+            "version": "2.0"
         }
 
         body = json.dumps(response).encode()
@@ -19,7 +19,7 @@ class Handler(BaseHTTPRequestHandler):
 def handler(event):
     return {
         "status": "ok",
-        "version": "1.0"
+        "version": "2.0"
     }
 
 if __name__ == "__main__":
